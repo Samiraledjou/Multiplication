@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript multiplication table</title>
+</head>
+<body>
+    
+
+    <script>
+        document.write("<table border='1px'>");
+
+        document.write("<tr style='font-size:20px;color:black;background-color:white;'>");
+
+        for (i =1; i <= 12; i++)
+        {
+            document.write("<th>  " + i + "  </th>");
+        }
+        for(k=1; k <= 12; k++)
+        {
+            var colorcode = "";
+            if(k%2 ===0)
+            {
+                colorcode = "#FFF"
+            }else
+            {
+                colorcode ="#FFFF00"
+            }
+            document.write("<tr style='background-color:"+ colorcode +"'>")
+            for(j=1; j<=12; j++)
+            {
+                document.write("<td style='font-size:23px'>"+j+"x" + k +"=" + j*k + "</td>")
+            }
+        }
+        document.write("</tr>")
+        document.write("</table>");
+
+    </script>
+    
+   
+</body>
+</html>
